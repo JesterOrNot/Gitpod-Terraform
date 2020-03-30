@@ -7,8 +7,8 @@ RUN brew install terraform
 WORKDIR /tmp/awscli
 
 # Install AWS CLI
-RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
-    && unzip awscliv2.zip \
+RUN sudo curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
+    && sudo unzip awscliv2.zip \
     && sudo ./aws/install \
     && cd .. \
-    && rm -rf awscli
+    && sudo rm -rf awscli
