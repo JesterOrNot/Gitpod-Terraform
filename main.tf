@@ -1,9 +1,9 @@
 provider "aws" {
     profile = "default"
-    region = "us-east-1"
+    region = "us-east-2"
 }
 
 resource "aws_instance" "example" {
-    ami = "ami-275f631"
+    ami = "ami-0fc20dd1da406780b"
     instance_type = "t2.micro"
 }
